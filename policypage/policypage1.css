@@ -26,11 +26,16 @@ header.header {
     position: relative;
     z-index: 3;
 }
+.common{
+    position: relative;
+    bottom: 75px;
+}
 .common .common_title{
+    position: relative;
     background-image:url(https://www.rda.go.kr/young/file/imageView.do?fpath=78mfPU1tH5tpGdf2EjZQb0R3AXuZGhjU7I8pBv4Rl9tqEaXhOUrKyqO8iZWgudng&fname=2lUP0R5DD%2FcE9xG4Z1MFWqTYTr98NytuMiEzSs4N44jEkq%2B633YFffxB6MQYKYiyzL6%2B6loOaDTPZnpyutfRzg%3D%3D&fmime=Lg45aghPCGTl0b%2FVATARWg%3D%3D);
-
     height: 17.73em;
     overflow: hidden;
+    width:100%
    
 }
 .common_wrap{
@@ -82,8 +87,8 @@ ul span{
     display: block;
     max-width: 100%;
     height: auto;
-    left: 1126px;
-    margin-top: -160px;
+    left: 1134px;
+    margin-top: -169px;
 }
 
 .page_wrap{
@@ -172,14 +177,14 @@ a{
 }
 
 .table{
-    margin: 110px 151px 0 0;
+    margin: 35px 151px 0 0;
 }
 
 .table1{
     border-top: 1px solid #ccc;
     padding-top: 30px;
     width: 1400px;
-    height: 466px;
+    height: 480px;
     margin-left: 20px;
 }
 
@@ -304,7 +309,7 @@ a{
     border-top: 1px solid #ccc;
     padding-top: 30px;
     width: 1400px;
-    height: 625px;
+    height: 636px;
 }
 
 .table2::before{

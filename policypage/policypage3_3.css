@@ -26,6 +26,12 @@ header.header {
     position: relative;
     z-index: 3;
 }
+
+.common{
+    position: relative;
+    bottom: 75px;
+}
+
 .common .common_title{
     background-image:url(https://www.rda.go.kr/young/file/imageView.do?fpath=78mfPU1tH5tpGdf2EjZQb0R3AXuZGhjU7I8pBv4Rl9tqEaXhOUrKyqO8iZWgudng&fname=2lUP0R5DD%2FcE9xG4Z1MFWqTYTr98NytuMiEzSs4N44jEkq%2B633YFffxB6MQYKYiyzL6%2B6loOaDTPZnpyutfRzg%3D%3D&fmime=Lg45aghPCGTl0b%2FVATARWg%3D%3D);
 
@@ -103,6 +109,10 @@ ul span{
 .page_use{
     margin-top: 91px;
     overflow: hidden;
+}
+
+.category{
+    margin-left:20px;
 }
 
 .ct1, .ct2, .ct4{
@@ -209,13 +219,14 @@ a{
 }
 
 .table{
-    margin: 10px 151px 0 0;
+    margin: -65px 151px 0 0;
 }
 
 .table1{
     padding-top: 30px;
-    width: 1435px;
+    width: 1400px;
     height: 1000px;
+    margin-left:20px;
 }
 
 .table1::before{
@@ -233,7 +244,7 @@ a{
     margin-top: 30px;
     margin-left: 30px;
     float: left;
-    width: 450px;
+    width: 424px;
 }
 
 .note_img{
@@ -264,8 +275,8 @@ a{
 
 .table1_content2{
     float: left;
-    font-size: 18px;
-    width: 955px;
+    font-size: 19px;
+    width: 920px;
 }
 
 .table1_content2_first{
