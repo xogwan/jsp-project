@@ -23,23 +23,17 @@ body {
     margin : 0;
 }
 
-.common{
-    position: relative;
-    bottom: 75px;
-}
-
 .common .common_title{
-    position: relative;
     background-image:url(https://www.rda.go.kr/young/file/imageView.do?fpath=78mfPU1tH5tpGdf2EjZQb0R3AXuZGhjU7I8pBv4Rl9tqEaXhOUrKyqO8iZWgudng&fname=2lUP0R5DD%2FcE9xG4Z1MFWqTYTr98NytuMiEzSs4N44jEkq%2B633YFffxB6MQYKYiyzL6%2B6loOaDTPZnpyutfRzg%3D%3D&fmime=Lg45aghPCGTl0b%2FVATARWg%3D%3D);
-    width: 100%;
+
     height: 17.73em;
     overflow: hidden;
+   
 }
-
 .common_wrap{
     position: relative;
     margin:auto;
-    max-width: 91rem;
+    max-width: 90rem;
     height: 100%;
 }
 
@@ -176,14 +170,14 @@ a{
 }
 
 .table{
-    margin: 35px 151px 0 0;
+    margin: 110px 151px 0 0;
 }
 
 .table1{
     border-top: 1px solid #ccc;
     padding-top: 30px;
     width: 1400px;
-    height: 535px;
+    height: 520px;
     margin-left: 20px;
 }
 
@@ -319,7 +313,7 @@ a{
     border-top: 1px solid #ccc;
     padding-top: 30px;
     width: 1400px;
-    height: 650px;
+    height: 625px;
     margin-left: 20px;
 }
 
@@ -330,7 +324,7 @@ a{
     width: 220px;
     height: 3px;
     background: #464d77;
-    margin-top: -100px;
+    margin-top: -32px;
 }
 
 .table2_content1::before{

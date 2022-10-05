@@ -26,12 +26,6 @@ header.header {
     position: relative;
     z-index: 3;
 }
-
-.common{
-    position: relative;
-    bottom: 75px;
-}
-
 .common .common_title{
     background-image:url(https://www.rda.go.kr/young/file/imageView.do?fpath=78mfPU1tH5tpGdf2EjZQb0R3AXuZGhjU7I8pBv4Rl9tqEaXhOUrKyqO8iZWgudng&fname=2lUP0R5DD%2FcE9xG4Z1MFWqTYTr98NytuMiEzSs4N44jEkq%2B633YFffxB6MQYKYiyzL6%2B6loOaDTPZnpyutfRzg%3D%3D&fmime=Lg45aghPCGTl0b%2FVATARWg%3D%3D);
 
@@ -110,10 +104,6 @@ ul span{
 .page_use{
     margin-top: 91px;
     overflow: hidden;
-}
-
-.category{
-    margin-left:20px;
 }
 
 .ct1, .ct2, .ct4{
@@ -219,14 +209,15 @@ a{
 }
 
 .box_text{
-    margin-top: -30px;
-    margin-left:20px;
+    margin-top: 50px;
     padding: 25px 0;
     background-color: #f4f4f4;
     text-align: center;
     border-radius: 10px;
     font-size: 18.5px;
     font-weight: bold;
+    width: 1435px;
+    
 }
 
 .table_wrap{
@@ -242,10 +233,9 @@ a{
 
 .table1{
     border-top: 1px solid #ccc;
-    margin-left:20px;
     padding-top: 30px;
-    width: 1400px;
-    height: 653px;
+    width: 1435px;
+    height: 640px;
 }
 
 .table1::before{
@@ -284,7 +274,7 @@ a{
 .table1_content2{
     float: left;
     font-size: 18px;
-    width: 920px;
+    width: 955px;
 }
 
 .table1_content2_first{
@@ -292,10 +282,6 @@ a{
     padding-top: 30px;
     border-bottom: 2px dotted #ccc;
     width: 100%;
-}
-
-.table1_content2_first p{
-    margin-left: 16px
 }
 
 .table1_content2_first h4{
@@ -389,9 +375,8 @@ a{
 
 .table2{
     border-top: 1px solid #ccc;
-    width: 1400px;
+    width: 1435px;
     height: 625px;
-    margin-left:20px;
 }
 
 .table2::before{
@@ -431,7 +416,7 @@ a{
 .table2_content2{
     float: left;
     font-size: 18px;
-    width: 920px;
+    width: 955px;
 }
 
 .table2_content2_first{
@@ -531,7 +516,6 @@ a{
     border-top: 1px solid #ccc;
     padding-top: 30px;
     width: 1400px;
-    margin-left:20px;
 }
 
 .table3::before{
