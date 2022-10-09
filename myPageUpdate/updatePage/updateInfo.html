@@ -266,8 +266,7 @@
                                             <!-- (이후) 사용자가 다른번호 인증 버튼을 눌렀을 때 인증번호 발송 버튼으로 변경 -->
                                             <input type="text" class="inputPhone" placeholder="휴대폰 번호를 입력해주세요" hidden>
                                             <input type="button" value="인증번호 발송" class="sendNumber" hidden>
-                                        </div>
-                                        <div class="test2">
+
                                             <!-- (이후) 사용자가 휴대폰 번호까지 기입을 하고 인증번호 발송을 눌렀을 때 인증번호를 입력할 수 있는 input 만들기 -->
                                             <input type="text" class="inputCertiNum" placeholder="인증번호를 입력해주세요" hidden>
                                             <input type="button" value="확인" class="submitBtn" hidden>
@@ -311,6 +310,7 @@
                                     <td>
                                         <select id="selectUserInfo03">
                                             <option value="">선택</option>
+                                            <option value="-2">선택안함</option>
                                             <option value="-1">직접입력</option>
                                             <option value="1">사과</option>
                                             <option value="2">배</option>
@@ -455,23 +455,23 @@
     /* 다른번호 인증 클릭시 */
     $(".changePhone").click(function() {
         /* 기존에 있던 요소는 숨기기 */
-        $(".changePhone").css("display", "none");
-        $(".printPhone").css("display", "none");
+        $(".changePhone").hide();
+        $(".printPhone").hide();
 
         /* 변경할 휴대폰 번호를 입력할 수 있는 input 보이기 */
-        $(".inputPhone").css("display", "inline-block");
-        $(".sendNumber").css("display", "inline-block");
+        $(".inputPhone").show();
+        $(".sendNumber").show();
     });
 
     /* 변경할 휴대폰 번호 입력 후 "인증번호 발송" 버튼 클릭시 */
     $(".sendNumber").click(function() {
-        let text = $(".inputPhone").val(); // 사용자가 입력한 휴대폰 번호
-        $(".inputPhone").val(text);
-        $(".inputPhone").attr("readonly", true);
         /* 기존 요소 숨김 */
-        $(".sendNumber").css("display", "none");
-        $(".inputCertiNum").css("display", "inline-block");
-        $(".submitBtn").css("display", "inline-block");
+        $(".sendNumber").hide();
+        $(".inputPhone").hide();
+        
+        /* 인증번호 입력하는 창 나옴 */
+        $(".inputCertiNum").show();
+        $(".submitBtn").show();
     });
 
 
@@ -481,9 +481,9 @@
     /* 주요생산품목 "직적입력" 선택시 input 보이게 하기 */
     $("#selectUserInfo03").change(function() {
         if(this.value == -1) { /* 사용자 선택이 직접입력인 경우 */
-            $("#inputItem").css("display", "inline-block");
+            $("#inputItem").show();
         } else {
-            $("#inputItem").css("display", "none");
+            $("#inputItem").hide();
         }
     });
 

@@ -479,3 +479,25 @@ input.inputPhone::placeholder,
 input.inputCertiNum::placeholder {
     padding: 0;
 }
+
+/* --------------------------------------------------------------- */
+/* 셀렉트 박스 */
+select {
+    width: 115px;
+    height: 40px;
+    appearance: none;
+    background-image: url('images/dropicon.png');
+    background-size: 30px 45px;
+    background-repeat: no-repeat;
+    background-position: right;
+    font-size: 14px;
+}
+select.domain {
+    padding-left: 10px;
+}
+select.domain,
+select#userInfo01,
+select#userInfo02,
+select#selectUserInfo03 {
+    font-size: 14px;
+}
