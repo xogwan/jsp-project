@@ -58,6 +58,7 @@ div#passwordCheckText {
 }
 div.passwordInputDiv {
     width: 50%;
+    position: relative;
 }
 input.passwordInput {
     height: 46px;
@@ -448,4 +449,25 @@ div.sub_content div.inner {
     font-weight: bold;
     font-size: 1.059rem;
     margin-left: 8px;
+}
+
+/* -------------------------------------- */
+div.tooltip_pw, div.tooltip_pwCh {
+    position: relative;
+}
+.tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #7fb069;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+}
+.tooltiptext {
+    /* 포지셔닝 */
+    position: absolute;
+    top: 7px;
+    right: -240px;
+    z-index: 10;
 }

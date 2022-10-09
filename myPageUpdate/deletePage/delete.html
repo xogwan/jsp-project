@@ -238,7 +238,8 @@
                         <div class="passwordCheck">
                             <div id="passwordCheckText">비밀번호 입력</div>
                             <div class="passwordInputDiv">
-                             <input type="text" class="passwordInput" placeholder="현재 비밀번호를 입력해주세요">
+                             <input type="password" class="passwordInput" placeholder="현재 비밀번호를 입력해주세요">
+                             <span class="tooltiptext">비밀번호를 확인해주세요</span>
                             </div>
                         </div>
 
@@ -330,6 +331,18 @@
         $(this).find("img").attr("src", src);
     });
 
+
+    /* -------------------------------------------------------------- */
+    /* 비밀번호 입력하지 않고 수정 버튼 클릭시 말풍선 출력 */
+    $("#submitBtn").click(function() {
+        $(".tooltiptext").finish();
+        if($(".passwordInput").val().length == 0) {
+            $(".tooltiptext").css("visibility", "visible");
+            $(".passwordInput").focus();
+            $(".tooltiptext").fadeIn(600);
+            $(".tooltiptext").fadeOut(600);
+        }
+    });
 
 
     /* 헤더 적용 스크립트 */
