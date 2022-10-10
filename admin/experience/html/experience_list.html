@@ -14,6 +14,8 @@
     <!-- 사이드 메뉴 -->
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script src="../js/side_menu.js"></script>
+    <!-- 정지 버튼 클릭 이벤트 -->
+    <script src="../js/disabled.js"></script>
     <!-- 버튼 클릭 시 확인 알림창 -->
     <script src="../js/check.js"></script>
     <title>관리자-체험 프로그램 관리</title>
@@ -70,6 +72,11 @@
                     </ul>
                  </li>
   
+                 <li class='active sub-menu'><a href='#'><span>댓글</span><span class="toggleBtn2">+</span></a>
+                    <ul>
+                       <li><a href='../../reply/html/reply.html'><span>댓글 관리</span></a></li>
+                    </ul>
+                 </li>
               </ul>
            </div>
         </nav>
@@ -115,8 +122,8 @@
                         <span class="s-form">
                             <select name="searchSelect">
                                 <option value="programName">프로그램명</option>
-                                <option value="id">신청자</option>
-                                <option value="address">주소</option>
+                                <option value="id">아이디</option>
+                                <option value="address">위치</option>
                             </select>
                         </span>
                         <span class="s-f-input">
@@ -143,40 +150,55 @@
                     <tr class="title">
                         <th class="num">승인번호</th>
                         <th class="title">프로그램명</th>
-                        <th class="id">신청자</th>
+                        <th class="id">아이디</th>
                         <th class="work-date">작업날짜</th>
                         <th class="work-time">작업시간</th>
                         <th class="manpower">인원</th>
                         <th class="address">위치</th>
                         <th class="date">작성날짜</th>
-                        <th class="delete"></th>
+                        <th class="delete">보류여부</th>
                         <th class="wait"></th>
                     </tr>
                     <!-- ↓ 데이터 출력 -->
-                    <tr>
-                        <td>12432</td>
-                        <td class="title" onclick="location.href='#'">잡초 </td>
-                        <td>나랑농부할래</td>
-                        <td>2022-10-11</td>
-                        <td>5h</td>
-                        <td>1/2</td>
-                        <td>서울</td>
-                        <td>2022-10-01</td>
-                        <td class="wait"><input type="button" value="보류"></td>
-                        <td class="delete"><input type="button" value="삭제" onclick="deleteCheck()"></td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td class="title" onclick="location.href='#'">잡초 뽑기</td>
-                        <td>나랑농부할래</td>
-                        <td>2022-10-11</td>
-                        <td>5h</td>
-                        <td>1/2</td>
-                        <td>경기</td>
-                        <td>2022-10-01</td>
-                        <td class="wait"><input type="button" value="보류"></td>
-                        <td class="delete"><input type="button" value="삭제" onclick="deleteCheck()"></td>
-                    </tr>
+                    <tbody class="tbody">
+                        <tr>
+                            <td>12432</td>
+                            <td class="title" onclick="location.href='#'">비료뿌리기</td>
+                            <td>Im농부</td>
+                            <td>2022-10-07</td>
+                            <td>2h</td>
+                            <td>2/4</td>
+                            <td>경기</td>
+                            <td>2022-10-03 10:00</td>
+                            <td class="wait"><input type="button" class="control" value="보류"></td>
+                            <td class="delete"><input type="button" name="delete" value="삭제" onclick="deleteCheck()"></td>
+                        </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td class="title" onclick="location.href='#'">잡초 뽑기</td>
+                                <td>나랑농부할래</td>
+                                <td>2022-10-11</td>
+                                <td>5h</td>
+                                <td>1/2</td>
+                                <td>경기</td>
+                                <td>2022-10-03 10:00</td>
+                                <td class="wait"><input type="button" class="control" value="보류"></td>
+                                <td class="delete"><input type="button" name="delete" value="삭제" onclick="deleteCheck()"></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td class="title" onclick="location.href='#'">잡초 뽑기</td>
+                                <td>Isay농Yousay부</td>
+                                <td>2022-10-16</td>
+                                <td>3h</td>
+                                <td>2/5</td>
+                                <td>인천</td>
+                                <td>2022-10-03 10:00</td>
+                                <td class="wait"><input type="button" class="control" value="보류"></td>
+                                <td class="delete"><input type="button" name="delete" value="삭제" onclick="deleteCheck()"></td>
+                            </tr>
+                    </tbody>
                 </table>
 
                 <!-- 페이징 -->

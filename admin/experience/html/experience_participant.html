@@ -70,6 +70,11 @@
                     </ul>
                  </li>
   
+                 <li class='active sub-menu'><a href='#'><span>댓글</span><span class="toggleBtn2">+</span></a>
+                    <ul>
+                       <li><a href='../../reply/html/reply.html'><span>댓글 관리</span></a></li>
+                    </ul>
+                 </li>
               </ul>
            </div>
         </nav>
@@ -86,7 +91,7 @@
             <!-- 컨텐츠 상단 통계 -->
             <div id="contents-top">
                 <div class="content c-left">
-                    <div class="title">Today</div>
+                    <div class="title week">최근 일주일</div>
                     <div id="counts-group">
                         <div class="counts">
                             <!-- 오늘 추가 되는 프로그램 수 -->
@@ -97,7 +102,7 @@
                 </div>
                 <!-- 차트 -->
                 <div class="content">
-                    <div id="lineChart"></div>
+                    <div id="stickChart"></div>
                 </div>
             </div>
 
@@ -110,8 +115,8 @@
                         <span class="s-form">
                             <select name="searchSelect" class="val">
                                 <option value="programName">프로그램명</option>
-                                <option value="id">지원자</option>
-                                <option value="address">주소</option>
+                                <option value="id">아이디</option>
+                                <option value="address">위치</option>
                             </select>
                         </span>
                         <span class="s-f-input">
@@ -137,13 +142,13 @@
                 <table>
                     <tr class="title">
                         <th class="num">번호</th>
-                        <th class="id">지원자 ID</th>
+                        <th class="id">아이디</th>
                         <th class="title">프로그램명</th>
                         <th class="work-date">작업날짜</th>
                         <th class="work-time">작업시간</th>
                         <th class="crop">작물</th>
                         <th class="address">위치</th>
-                        <th class="date">지원 날짜</th>
+                        <th class="date">지원날짜</th>
                         <th class="delete"></th>
                     </tr>
                     <!-- ↓ 데이터 출력 -->
@@ -188,6 +193,7 @@
 
 </body>
 <!-- 차트 -->
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script src="../js/chartAPI.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="../js/chartAPI_stick.js"></script>
 <html>
